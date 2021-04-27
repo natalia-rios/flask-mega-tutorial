@@ -1,2 +1,6 @@
 WTForms~=2.3.3
 Flask~=1.1.2
+PyJWT~=2.0.1
+Werkzeug~=1.0.1
+alembic~=1.5.8
+SQLAlchemy~=1.4.11

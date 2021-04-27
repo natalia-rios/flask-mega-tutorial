@@ -1,0 +1,118 @@
+2021-04-23 14:35:43,486 INFO: Microblog startup [in /home/natalia/flask-mega-tutorial/microblog/app/__init__.py:47]
+2021-04-23 14:49:19,479 INFO: Microblog startup [in /home/natalia/flask-mega-tutorial/microblog/app/__init__.py:47]
+2021-04-23 14:49:24,076 INFO: Microblog startup [in /home/natalia/flask-mega-tutorial/microblog/app/__init__.py:47]
+2021-04-23 14:53:31,666 INFO: Microblog startup [in /home/natalia/flask-mega-tutorial/microblog/app/__init__.py:47]
+2021-04-23 15:00:02,048 INFO: Microblog startup [in /home/natalia/flask-mega-tutorial/microblog/app/__init__.py:47]
+2021-04-23 15:00:42,635 INFO: Microblog startup [in /home/natalia/flask-mega-tutorial/microblog/app/__init__.py:47]
+2021-04-23 15:01:08,689 INFO: Microblog startup [in /home/natalia/flask-mega-tutorial/microblog/app/__init__.py:47]
+2021-04-26 13:01:25,019 INFO: Microblog startup [in /home/natalia/flask-mega-tutorial/microblog/app/__init__.py:49]
+2021-04-26 13:01:32,406 ERROR: Exception on /reset_password_request [POST] [in /home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/natalia/flask-mega-tutorial/microblog/app/routes.py", line 166, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/natalia/flask-mega-tutorial/microblog/app/email.py", line 13, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "/home/natalia/flask-mega-tutorial/microblog/app/email.py", line 9, in send_email
+    mail.send(msg)
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/usr/lib/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 308, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+2021-04-26 13:01:41,295 ERROR: Exception on /reset_password_request [POST] [in /home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/natalia/flask-mega-tutorial/microblog/app/routes.py", line 166, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/natalia/flask-mega-tutorial/microblog/app/email.py", line 13, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "/home/natalia/flask-mega-tutorial/microblog/app/email.py", line 9, in send_email
+    mail.send(msg)
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/usr/lib/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 308, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+2021-04-26 13:13:53,960 ERROR: Exception on /reset_password_request [POST] [in /home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/natalia/flask-mega-tutorial/microblog/app/routes.py", line 166, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/natalia/flask-mega-tutorial/microblog/app/email.py", line 13, in send_password_reset_email
+    msg.body = text_body
+  File "/home/natalia/flask-mega-tutorial/microblog/app/email.py", line 9, in send_email
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/home/natalia/flask-mega-tutorial/microblog/venv/lib/python3.8/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/usr/lib/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 308, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
