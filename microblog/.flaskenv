@@ -1,1 +1,2 @@
-set FLASK_APP=microblog.py
+FLASK_APP=microblog.py
+MS_TRANSLATOR_KEY=c6ca6d00313c444c9fa6fbd68d6edff5
