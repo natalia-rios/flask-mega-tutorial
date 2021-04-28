@@ -21,7 +21,6 @@ guess-language-spirit==0.5.3
 idna==2.6
 itsdangerous==0.24
 Jinja2==2.11.2
-libpq-dev==9.0.0
 Mako==1.0.7
 MarkupSafe==1.1.1
 PyJWT==1.5.3
@@ -38,5 +37,5 @@ Werkzeug==1.0.1
 WTForms==2.1
 
 # requirements for Heroku
-psycopg2==2.7.3.1
+psycopg2-binary==2.8.6
 gunicorn==19.7.1
