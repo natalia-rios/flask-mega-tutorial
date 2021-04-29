@@ -1,9 +1,7 @@
 """followers
-
 Revision ID: ae346256b650
 Revises: 37f06a334dbf
 Create Date: 2017-09-17 15:41:30.211082
-
 """
 from alembic import op
 import sqlalchemy as sa
